@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import {View} from 'react-native';
-import Header from './src/components/uikit/header';
+import React, { Component } from 'react';
+import { View } from 'react-native';
+import { Header, ImageCard } from './src/components/uikit';
 
 const url = 'https://raw.githubusercontent.com/react-native-village/react-native-init/master/stargate/stargate.json';
 export default class App extends Component {
@@ -24,6 +24,7 @@ export default class App extends Component {
     return (
       <View>
         <Header title={this.state.title}/>
+        <ImageCard/>
       </View>
     );
   }
