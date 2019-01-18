@@ -1,6 +1,6 @@
 // import
-import React from 'react'
-import {View, Text, StyleSheet} from 'react-native'
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
 // body
 
 const Header = props => {
