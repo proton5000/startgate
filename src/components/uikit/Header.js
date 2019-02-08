@@ -7,9 +7,11 @@ import { ifIphoneX } from 'react-native-iphone-x-helper';
 const Header = props => {
   const { viewStyle, textStyle } = styles;
   return (
-    <View style={ viewStyle }>
-      <Text style={ textStyle }>{props.title}</Text>
-    </View>
+    <SafeAreaView style={{backgroundColor: '#30d0fe'}}>
+      <View style={ viewStyle }>
+        <Text style={ textStyle }>{props.title}</Text>
+      </View>
+    </SafeAreaView>
   )
 };
 
