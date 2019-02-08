@@ -1,17 +1,15 @@
 // import
 import React from 'react';
-import { View, Text, StyleSheet, SafeAreaView } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { ifIphoneX } from 'react-native-iphone-x-helper';
 // body
 
 const Header = props => {
   const { viewStyle, textStyle } = styles;
   return (
-    <SafeAreaView style={{backgroundColor: '#30d0fe'}}>
-      <View style={ viewStyle }>
+    <View style={ viewStyle }>
         <Text style={ textStyle }>{props.title}</Text>
-      </View>
-    </SafeAreaView>
+    </View>
   )
 };
 
