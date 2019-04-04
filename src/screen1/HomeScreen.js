@@ -22,6 +22,10 @@ export default class HomeScreen extends Component {
     }
   };
 
+  onGoBack = (someDataFromChildren) => {
+    console.log('someDataFromChildren', someDataFromChildren)
+  };
+
   render() {
     const { title, data } = this.state;
     const { navigation } = this.props;
@@ -39,7 +43,7 @@ export default class HomeScreen extends Component {
               <ImageCard
                 data={item.show}
                 key={item.show.id}
-                onPress = {() => navigation.navigate(STARGATE_DETAILS, (item.show))}
+                onPress = {() => navigation.navigate(STARGATE_DETAILS, ({ show: item.show, onGoBack: this.onGoBack }))}
               />
             ))
             }
