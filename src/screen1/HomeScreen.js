@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { View, ScrollView } from 'react-native';
 import { Header, ImageCard, Layout } from '../components/uikit';
 import { STARGATE_DETAILS } from "../route";
+import { BLUE } from '../../constants';
 
-// const url = 'https://raw.githubusercontent.com/react-native-village/react-native-init/master/stargate/stargate.json';
 const url = 'http://api.tvmaze.com/search/shows?q=stargate';
 
 export default class HomeScreen extends Component {
@@ -33,8 +33,7 @@ export default class HomeScreen extends Component {
       <View>
         <Header
           title={title}
-          leftIcon="ios-menu"
-          leftColor="#fff"
+          headerColor={BLUE}
           onPress={() => navigation.openDrawer()}
         />
         <ScrollView>
